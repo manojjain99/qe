@@ -1,0 +1,35 @@
+Text fields (aka edit fields) are one of the most used UI controls for any application. Considering the quantum as well as the variety of data that is filled for text fields, various common issues are faced by users. Such errors are very easy to handle if certain guidelines/checklists are followed at the time of development and we don't need to worry about them unless any change is incorporated.
+ 
+Here are various considerations related to text fields:
+Length
+Special characters
+Localized characters
+Supporting multi-line characters 
+Word wrap 
+Alignment (Left/Right)
+ 
+Here is a table that summarizes sample texts of various lengths as well as special and localized characters:
+
+Note: All sample texts are starting w/ “S” and ending w/ “E” so that we can identify the start and end of the text during verifications. Usually, we'll not find “E” in case the text is getting truncated due to some reason. In case we need to alter the length of sample text based on field size then do ensure that S and E are always there at the start and end respectively.
+
+
+Text Length - 10
+S@$%&”ग私äE
+
+Text Length - 20
+S~`@$%&_”’;<,.?/ग私äE
+
+Text Length - 50
+S~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-A1-गुणवत्ता-私-äE
+
+Text Length - 100
+S-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEF-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना-私たちは-bäuen-E
+
+Text Length - 255
+S-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-*******************-E
+
+Text Length - 512
+S-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-*******************-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-************************-E
+
+Text Length - 1024
+S-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-*******************-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-************************-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-*******************-~`!@#$%^&*()_-+={}[]”’:;><,.?/|\-ABCDEFGHIJKLMNOPQRSTUVWXYZ-1234567890-हम उच्च गुणवत्ता वाले उत्पाद बनाना पसंद करते हैं-私たちは高品質の製品を作るのが大好きです-Wir lieben es, hochwertige Produkte zu bäuen-我们热爱打造高品质的产品-نحن نحب بناء منتجات عالية الجودة-***************************-E
